@@ -13,9 +13,33 @@
     <link rel="stylesheet" href="style/css/responsive.css" />
     <link rel="stylesheet" href="style/css/fonts.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 </head>
 
 <body>
+    <header id="header">
+        <div id="header__brand">
+            <a href="#">Fiber</a>
+        </div>
+        <nav id="header__nav">
+            <button aria-label="Abrir menu" id="header__nav__btn-mobile" aria-haspop="true" aria-controls="menu" aria-expanded="false">
+                Menu
+                <span id="header__nav__hamburguer"></span>
+            </button>
+            <ul id="header__nav__menu" role="menu">
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Features</a></li>
+            </ul>
+        </nav>
+        <div id="header__actions">
+            <a href="#" id="header__actions__sign-in">Sign In</a>
+            <a href="#" id="header__actions__sign-up">Sign Up</a>
+        </div>
+    </header>
     <script src="js/script.js"></script>
 </body>
 
