@@ -43,7 +43,7 @@ body
             text-decoration: none
             font-weight: 700
         #header__actions__sign-in
-            padding: 1rem
+            padding: 1rem 2rem
             border-radius: 0.625rem
             color: base.$black
             transition: 0.2s
@@ -51,10 +51,154 @@ body
         #header__actions__sign-in:hover
             background-color: base.$gray-light
         #header__actions__sign-up
-            padding: 1rem
+            padding: 1rem 2rem
             border-radius: 0.625rem
             color: base.$white
             background-color: base.$purple
             transition: 0.2s
         #header__actions__sign-up:hover
             background-color: base.$purple-light
+
+#main
+    #main__top
+        padding: 50px 0 100px 0
+        max-width: 960px
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        wrap: nowrap
+        align-items: center
+        justify-content: space-between
+        #main__top__info
+            #main__top__info-rate
+                display: flex
+                flex-direction: row
+                wrap: nowrap
+                gap: 0.5rem
+                align-items: center
+                ul
+                    display: inline-block
+                    li
+                        display: inline-block
+                        span
+                            color: base.$yellow
+                p
+                    display: inline-block
+                    font-weight: 500
+                    font-size: 1.125rem
+            #main__top__info-text
+                margin: 0.9375rem 0
+                h1
+                    font-weight: 700
+                    font-size: 2.625rem
+            #main__top__info-description
+                p
+                    color: base.$gray
+            #main__top__info-actions
+                margin: 1.875rem 0
+                #main__top__info-actions__trial
+                    padding: 1rem 2rem
+                    border-radius: 0.3125rem
+                    color: base.$white
+                    font-weight: 700
+                    background-color: base.$purple
+                    transition: 0.2s
+                #main__top__info-actions__trial:hover
+                    background-color: base.$purple-light
+                #main__top__info-actions__examples
+                    padding: 1rem 2rem
+                    border-radius: 0.625rem
+                    color: base.$purple
+                    font-weight: 700
+                    text-decoration: underline
+                    text-underline-position: under
+                    transition: 0.2s
+                #main__top__info-actions__examples:hover
+                    background-color: base.$gray-light
+            #main__top__info-subdescription
+                ul
+                    display: flex
+                    column-gap: 0.9375rem
+                    li
+                        display: flex
+                        flex-direction: row 
+                        align-items: center
+                        wrap: nowrap
+                        column-gap: 0.5rem
+        #main__top__image
+            #main__top__image_content
+                width: auto
+                height: 29.375rem
+    
+    #main__content
+        background: base.$white
+        #main__content__container
+            max-width: 960px
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            padding: 100px 0
+            #main__content__container_title
+                p
+                    color: base.$purple
+                    font-weight: 700
+                    font-size: 1.125rem
+                    margin-bottom: 15px 
+            #main__content__container_subtitle
+                h2
+                    color: base.$black
+                    font-size: 48px
+                    font-weight: 700
+                    margin-bottom: 15px
+            #main__content__container__info
+                display: flex
+                flex-direction: row
+                gap: 20px
+                .main__content__container__info__item
+                    display: flex
+                    flex-direction: column
+                    gap: 20px
+                    margin-top: 30px
+                    img
+                        width: 3rem
+                        height: 3rem
+                    p
+                        color: base.$black
+                        font-weight: 700
+                        font-size: 1.125rem
+                    span
+                        color: base.$gray
+                        line-height: 25px
+
+#footer
+    padding: 50px 0
+    #footer__container
+        max-width: 960px
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        gap: 50px
+        .footer__container__item
+            .footer__container__item__title
+                margin-bottom: 15px
+                p
+                    color: base.$black
+                    font-size: 20px
+                    font-weight: 700
+            .footer__container__item__description
+                p
+                    color: base.$gray
+                    font-size: 18px
+                    line-height: 25px
+            .footer__container__item__list
+                ul
+                    li
+                        margin-bottom: 10px
+                        p
+                            color: base.$gray
+                            font-size: 18px
+                            line-height: 25px
+                            transition: 0.2s
+                            cursor: pointer
+                        p:hover
+                            color: base.$purple
