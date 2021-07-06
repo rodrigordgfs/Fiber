@@ -132,12 +132,13 @@ body
     
     #main__content
         background: base.$white
-        #main__content__container
+        padding-bottom: 100px
+        #main__content__container_top
             max-width: 960px
             margin: 0 auto
             display: flex
             flex-direction: column
-            padding: 100px 0
+            padding: 100px 0 50px 0
             #main__content__container_title
                 p
                     color: base.$purple
@@ -169,6 +170,41 @@ body
                     span
                         color: base.$gray
                         line-height: 25px
+        #main__content__container_bottom
+            background-color: base.$purple
+            border-radius: 10px
+            max-width: 960px
+            margin: 0 auto
+            display: flex
+            flex-direction: row
+            align-items: center
+            padding: 0 60px
+            #main__content__container_bottom__info
+                display: flex
+                flex-direction: column
+                gap: 20px
+                h2
+                    color: base.$white
+                    font-weight: 700
+                    font-size: 32px
+                p
+                    color: base.$white
+                    line-height: 30px
+                a
+                    padding: 1rem 2rem
+                    border-radius: 0.3125rem
+                    color: base.$purple
+                    font-weight: 700
+                    background-color: base.$white
+                    transition: 0.2s
+                    max-width: 116px
+                a:hover
+                    background-color: base.$gray-light
+            #main__content__container_bottom__image
+                img
+                    width: auto
+                    height: 300px
+                    padding: 60px 0
 
 #footer
     padding: 50px 0
@@ -196,7 +232,7 @@ body
                         margin-bottom: 10px
                         p
                             color: base.$gray
-                            font-size: 18px
+                            font-size: 16px
                             line-height: 25px
                             transition: 0.2s
                             cursor: pointer
